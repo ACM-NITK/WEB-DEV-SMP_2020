@@ -1,0 +1,362 @@
+#loginbody{
+background-image:url(https://wallpaperaccess.com/full/30197.jpg) ;
+}
+#fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+    }
+    @keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-o-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+    
+    @-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+    }
+
+#slide_login {
+    position: absolute;
+    left: -2000px;
+    background: transparent;
+    -webkit-animation: slide_login 0.5s forwards;
+    -webkit-animation-delay: 2s;
+    animation: slide_login 0.5s forwards;
+    animation-delay: 2s;
+}
+
+@-webkit-keyframes slide_login {
+    100% { left: 0px; }
+}
+
+@keyframes slide_login {
+    100% { left: 0px; }
+}
+#name{
+    border: none;
+    border-bottom: 2px solid gainsboro;
+    border-radius: 4px;
+    width: 700px;
+    height: 50px;
+    background-color: transparent;
+}
+#name:focus{
+    border: none;
+}  
+*:focus {
+    outline: none;
+}
+h1{
+    font-size: 80px;
+}
+input:focus {
+    box-shadow: none;
+    outline: 0;
+  }
+  
+  
+  input {
+    color: transparent;
+    text-shadow: 0 0 0 lightcyan;
+    padding: 10px;
+    height: 60px;
+    font-size: 50px;
+  }
+  input:focus {
+    outline: none;
+  }
+  .button {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+            justify-content: center;
+    cursor: pointer;
+  }
+  .button svg {
+    height: 55px;
+    width: 150px;
+    fill: none;
+    stroke-width: 5;
+  }
+  .button svg .o1 {
+    stroke: rgba(255, 179, 65, 0.7);
+    fill: transparent;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .button svg .o2 {
+    stroke: white;
+    stroke-dasharray: 20 420;
+    stroke-dashoffset: 20;
+    -webkit-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+  }
+  .button span {
+    position: absolute;
+    margin: auto 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .button:hover .o1 {
+    fill: rgba(204, 129, 16, 0.3);
+  }
+  .button:hover .o2 {
+    stroke-dashoffset: -420;
+  }
+  body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+  }
+  h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+  h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+  }  
+  .jumbotron {
+    background-color: #1e8df4;
+    color: #fff;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  .bg-grey {
+    background-color: #f6f6f6;
+  }
+  .logo-small {
+    color: #1e8df4;
+    font-size: 50px;
+  }
+  .logo {
+    color: #1e8df4;
+    font-size: 200px;
+  }
+  .thumbnail {
+    padding: 0 0 15px 0;
+    border: none;
+    border-radius: 0;
+  }
+  .thumbnail img {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color: #1e8df4;
+  }
+  .carousel-indicators li {
+    border-color: #1e8df4;
+  }
+  .carousel-indicators li.active {
+    background-color: #1e8df4;
+  }
+  .item h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    font-weight: 400;
+    font-style: italic;
+    margin: 70px 0;
+  }
+  .item span {
+    font-style: normal;
+  }
+  .panel {
+    border: 1px solid #1e8df4; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+    border: 1px solid #1e8df4;
+    background-color: #fff !important;
+    color: #1e8df4;
+  }
+  .panel-heading {
+    color: #fff !important;
+    background-color: #1e8df4 !important;
+    padding: 25px;
+    border-bottom: 1px solid transparent;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+    background-color: white !important;
+  }
+  .panel-footer h3 {
+    font-size: 32px;
+  }
+  .panel-footer h4 {
+    color: #aaa;
+    font-size: 14px;
+  }
+  .panel-footer .btn {
+    margin: 15px 0;
+    background-color: #1e8df4;
+    color: #fff;
+  }
+  .navbar {
+    margin-bottom: 0;
+    background-color: #1e8df4;
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #1e8df4 !important;
+    background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+  }
+  footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #1e8df4;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+    animation-name: slide;
+    -webkit-animation-name: slide;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+      width: 100%;
+      margin-bottom: 35px;
+    }
+    .form-group{
+        font-size: 10px;
+    }
+    .heading{
+        font-size: 30px;
+        text-align: left;
+    }
+    .button{
+        align-items: left;
+        margin: 0 auto;
+    }
+    .proceed{
+        margin-left: 0;
+        align-self: left;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+      font-size: 150px;
+    }
+  }
+  .nitklogo{
+      height:60px;
+  }
+  #buildinglogo{
+      color: white;
+      background-color: white;
+  }
+  .mottoimg{
+      height:200px;
+  }
+  #headingach{
+    font-size: 25px;
+    color: #163269;
+  }
+  .rank{
+    color: #6ABE77;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: right;
+  }
+  .rank-title{
+    font-weight: bold;
+    color: #172849;
+    text-align: right;
+  }
+  .rankingbody{
+    color: #161616;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: left;
+  }
+  .year{
+    color: #6ABE77;
+    text-align: left;
+  }
+  ul.news{
+    list-style-type: none;
+  }
+  .newsdate{
+  }
+  .newstext{
+    font-size: 15;
+    font-weight: bold;
+    color: #161616;
+  }
