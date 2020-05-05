@@ -41,6 +41,9 @@
 </nav>
 
 <div class="jumbotron text-center">
+  <div id='welcomegreet'>
+    Welcome
+  </div>
   <h1>NITK</h1> 
   <p>Work Is Worship</p> 
   <a href="https://vtour.nitk.ac.in/">
@@ -336,18 +339,38 @@ Campus Tour</button>
 </div>
 
 
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid bg-grey slideanim">
   <h2 class="text-center">CONTACT</h2>
   <form>
-    <div class="form-group">
-      <label for="exampleInputEmail1">Email address</label>
-      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto; text-align: center; width: 100%;">Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="https://www.w3schools.com/howto/img_avatar2.png" alt="Avatar" class="avatar" style="height: 300px;width:300px;">
     </div>
-    <div class="form-group">
-      <label for="exampleInputPassword1">Password</label>
-      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required style="color: black;" id="username">
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required style="color: black;" id="password">
+        
+      <span onclick="document.getElementById('id01').style.display='none'"><button type="button" onclick="signedin()">Login</button></span>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
     </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+    </div>
+  </form>
+</div>
+
     <div>
       <label for="functionalities">Enter price willing to donate :</label>
       <input type="text" class="form-control" id="donate" aria-describedby="emailHelp" placeholder="Enter amount">
@@ -359,7 +382,7 @@ Campus Tour</button>
     <div id="price"></div>
     <br>
     <br>
-    <button type="button" class="btn btn-primary" onclick="setprice()">Submit</button>
+    <button type="button" class="btn btn-primary" onclick="setprice()">Donate</button>
   </form>
 </div>
 
@@ -381,14 +404,22 @@ $(document).ready(function(){
     });
   });
 })
-
+function signedin(){
+  var username=document.getElementById('username').value;
+  var password=document.getElementById('password').value;
+  console.log(username+password);
+  document.getElementById('welcomegreet').innerHTML="Welcome "+username;
+}
 function setprice(){
-  var amountDonate=document.getElementById('donate').value;
-  var rem=amountDonate/10;
-  console.log(rem);
-  document.getElementById("willing").innerHTML="We are willing to donate 10% of your generous contribution towards COVID-19 releif funds in your name.";
-  document.getElementById("willing1").innerHTML="Amount Rs. "
-  document.getElementById("price").innerHTML=rem.toString();
+ 
+  
+    var amountDonate=document.getElementById('donate').value;
+    var rem=amountDonate/10;
+    console.log(rem);
+    document.getElementById("willing").innerHTML="We are willing to donate 10% of your generous contribution towards COVID-19 releif funds in your name.";
+    document.getElementById("willing1").innerHTML="Amount Rs. "
+    document.getElementById("price").innerHTML=rem.toString();
+  
 }
 </script>
 
